@@ -1,0 +1,138 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right,rgb(11, 11, 225),rgb(205, 3, 216));  
+  font-weight: bold;
+  }
+  
+  .player{
+    height: 95vh;
+
+    display: flex;
+    align-items: center ;
+    flex-direction: column;
+    justify-content: center;
+}
+  .wrapper{
+    border: 1px solid transparent;
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #fbfbfc;
+  
+  }
+  
+  .details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  }
+  
+  .imagem {
+  margin: 25px;
+  height: 250px;
+  width: 250px;
+  border:2px solid 	#FFFAFA;
+  background-position: center;
+  border-radius: 50%;
+  
+  }
+  
+  .tocando {
+  font-size: 1rem;
+  }
+  
+  .musica_nome {
+  font-size: 25px;
+  }
+  
+  .artista {
+  margin-top: 5px;
+  font-size:20px;
+  }
+  
+  .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  }
+  .active{
+   color: #0e0e0f;
+  }
+  
+  .voltar,
+  .playpause-track,
+  .prev-track,.botao-pause,.Aleatorio,
+  .next-track {
+  padding: 25px;
+  opacity: 0.8;
+  transition: opacity .2s;
+  }
+  
+  .voltar:hover,
+  .playpause-track:hover,
+  .prev-track:hover,
+  .next-track:hover {
+  opacity: 1.0;
+  }
+  
+  .slider_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .seek_slider, .volume_slider {
+  height:10px;
+  
+  }
+  
+  .seek_slider:hover,
+  .volume_slider:hover {
+  opacity: 1.0;
+  }
+  
+  .seek_slider {
+  width: 60%;
+  }
+  
+  .volume_slider {
+  width: 30%;
+  }
+  
+  .tempo_inicial,
+  .tempo_total {
+  padding: 10px;
+  }
+  .botao-pause{
+    display: none;
+  }
+  
+  i.fa-volume-down,
+  i.fa-volume-up {
+  padding: 10px;
+  }
+  
+  i,
+  i.fa-play-circle,
+  i.fa-pause-circle,
+  i.fa-step-forward,
+  i.fa-step-backward,.Aleatorio
+  p {
+  cursor: pointer;
+  }
+  
+  .rotate {
+      animation: rotation 8s infinite linear;
+  }
+  @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(359deg);
+      }
+  }
+  
+   
